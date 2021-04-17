@@ -2,6 +2,7 @@ import cv2 as cv
 import numpy as np
 
 img = cv.imread("Photos/piter.jpg")
+cv.imshow("original", img)
 
 # 1. Translation
 def translate(image, x, y):
@@ -42,8 +43,5 @@ cv.imshow("Flipped", flip)
 # 5. Cropping
 croped = img[200:400, 300:500]
 cv.imshow("Cropped", croped)
-
-
-cv.imshow("original", img)
 
 cv.waitKey(0)
